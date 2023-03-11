@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(245, 244, 242);
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.conteiner {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.tab-img {
+    display: none;
+}
+
+.tab {
+    background-color: rgb(199 221 248);
+    color:rgba(7, 7, 7, 0.512);
+    border-radius: 3px;
+}
+
+.tab-title {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    position: relative;
+}
+
+.tab-title::after {
+    content: '+';
+}
+
+.tab :checked + .tab-title {
+background-color: rgb(218, 255, 242);
+}
+
+.tab :checked + .tab-title::after {
+    content: 'x';
+}
+
+.tab :checked ~ .tab-img {
+    display: block;
+}
