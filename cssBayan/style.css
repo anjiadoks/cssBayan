@@ -22,6 +22,18 @@ h1 {
     color: black;
 }
 
+@media (min-width: 750px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+    }
+
+@media (min-width: 1400px) {
+    h1 {
+    font-size: 4rem;
+}
+}
+
 .tab-input {
     width: 0;
     height: 0;
@@ -42,13 +54,48 @@ h1 {
     overflow: hidden;
     transition: 0.25s;
     cursor: pointer;
+    width: 60%;
+    margin: 0.8rem auto;
 }
 
 .tab-input:checked + label >.tab-img {
-    max-height: 60em;
+    max-height: 100rem;
     transition: 1s;
 }
 
 .accordion-btn {
     height: 0.6rem;
+    visibility: hidden;
+    transition: 0.1s;
+}
+
+.tab-input:checked ~ label .accordion-btn {
+    transform: rotate(45deg);
+    transition: 1s;
+}
+
+.tab-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.tab-title {
+    display: block;
+}
+
+@media (min-width: 750px) {
+    .tab-title {
+        transition: all 0.5s ease-out;
+        font-size: 1.3rem;
+    }
+    }
+
+@media (min-width: 1400px) {
+    .tab-title {
+        transition: all 0.5s ease-out;
+        font-size: 2.6rem;
+}
 }
