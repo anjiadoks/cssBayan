@@ -116,16 +116,3 @@ h1 {
         font-size: 2.6rem;
 }
 }
-
-/**.tab:active{
-    opacity: 0.75;
-}
-
-.tab:active > label > .tab-content > .tab-title{
-    color: rgb(50, 50, 212);
-}
-
-.tab:active > label > .tab-content > .tab-btn{
-    color: rgb(50, 50, 212);
-}
-**/
