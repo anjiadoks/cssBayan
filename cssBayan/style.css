@@ -66,29 +66,22 @@ h1 {
     transition: 1s;
 }
 
+.tab-btn {
+ background-repeat: no-repeat;
+ background-size: cover;
+ opacity: 0;
+ transition: all .5s;
+}
+
 .accordion-btn {
     height: 0.6rem;
     visibility: hidden;
     transition: 0.1s;
 }
 
-.tab-input:checked ~ label .accordion-btn {
+.tab-input:checked ~ .tab-item .accordion-btn {
     transform: rotate(45deg);
     transition: 1s;
-}
-
-@media (hover:hover) {
-    .accordeon:hover > .accordeon__item > label > .row > .plus {
-        visibility: visible;
-    }
-    .tab:hover > label > .tab-img{
-        max-height: 100em;
-        transition: 1s;
-    }
-    .tab:hover > label > .tab-content > .accordion-btn {
-        transform: rotate(45deg);
-        transition: all 0.25s;
-    }
 }
 
 .tab-content {
@@ -115,4 +108,8 @@ h1 {
         transition: all 0.5s ease-out;
         font-size: 2.6rem;
 }
+}
+
+  .tab-input:hover ~ .tab-item .accordion-btn {
+    visibility: visible;
 }
