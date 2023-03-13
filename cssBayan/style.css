@@ -115,12 +115,22 @@ h1 {
         transition: all 0.5s ease-out;
         font-size: 1.3rem;
     }
+    .accordion-btn {
+        height: 1.6rem;
+        visibility: hidden;
+        transition: 0.1s;
+    }
     }
 
 @media (min-width: 1400px) {
     .tab-title {
         transition: all 0.5s ease-out;
         font-size: 2.6rem;
+}
+.accordion-btn {
+    height: 2.6rem;
+    visibility: hidden;
+    transition: 0.1s;
 }
 }
 
